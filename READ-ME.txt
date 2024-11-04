@@ -1,11 +1,78 @@
-  =>  Template Name    : FreeFolio - Freelancer Portfolio Template
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="img/botanical-blis.png" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4"> Project Background</h3>
+                    <p>Botanical Bliss is a flower-selling initiative focused on providing fresh, beautiful floral
+                        arrangements and individual
+                        flowers to customers. The project is inspired by the growing demand for high-quality flowers for
+                        various occasions,
+                        including weddings, birthdays, corporate events, and personal gifts. The floral industry
+                        continues to thrive as
+                        consumers seek out unique and meaningful ways to express emotions and celebrate milestones.
+                        Botanical Bliss aims to
+                        capture this market by offering a range of flowers with an emphasis on quality, freshness, and
+                        customer satisfaction.</p>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2">
 
-  =>  Template Link    : https://htmlcodex.com/freelancer-portfolio-template
+                            <h3 class="mb-4"> Problem Statement</h3>
+                            <p>The flower industry faces challenges in maintaining the freshness and quality of flowers
+                                throughout the supply chain,
+                                from sourcing to final sale. Customers frequently encounter issues like limited variety,
+                                short flower shelf-life, and
+                                inconsistency in quality. Additionally, there is a need for convenient and reliable
+                                access to flowers, as consumers are
+                                increasingly looking for flexible purchasing options. Botanical Bliss seeks to address
+                                these issues by establishing a
+                                system that ensures freshness, consistency, and availability, thereby enhancing the
+                                customer experience and reducing
+                                waste.</p>
 
-  =>  Template License : https://htmlcodex.com/license (or read the LICENSE.txt file)
+                        </div>
+                        <div class="col-sm-6 py-2">
+                            <h3 class="mb-4"> The Goal</h3>
+                            <p>The goal of Botanical Bliss is to provide high-quality, fresh flowers with convenient
+                                access and exceptional customer
+                                service, meeting diverse customer needs while promoting sustainable practices.
+                            </p>
+                        </div>
+                        <div class="col-sm-6 py-2">
+                            <h3 class="mb-4"> My role for this project</h3>
+                            <p>Frontend as well as backend Developer</p>
+                        </div>
 
-  =>  Template Author  : HTML Codex
+                    </div>
 
-  =>  Author Website   : https://htmlcodex.com
+                </div>
 
-  =>  About HTML Codex : HTML Codex is one of the top creators and publishers of Free HTML templates, HTML landing pages, HTML email templates and HTML snippets in the world. Read more at ( https://htmlcodex.com/about-us )
+
+            </div><br>
+            <h3 class="mb-4"> Wireframe</h3><br>
+
+            <div>
+                <img class="img-fluid rounded w-100" src="img/botawire.png" alt="">
+            </div><br>
+
+            <div>
+                <img class="img-fluid rounded w-100" src="img/botuwire.png" alt="">
+            </div><br>
+
+            <h3 class="mb-4"> High-fidelity Prototype</h3><br>
+
+            <div>
+                <img class="img-fluid rounded w-100" src="img/botaupro.png" alt="">
+            </div><br>
+
+            <div>
+                <img class="img-fluid rounded w-100" src="img/botapro.png" alt="">
+            </div>
+
+        </div>
+
+
+    </div>
+
+    </div>
+    </div>

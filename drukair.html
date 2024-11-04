@@ -2,6 +2,236 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .project-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .project-image {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .section-title {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+
+        .role-list {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        .role-list li {
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .role-list li:before {
+            content: "•";
+            color: #3498db;
+            font-weight: bold;
+            position: absolute;
+            left: -20px;
+        }
+
+        .persona-container {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .persona-card {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .persona-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: block;
+        }
+
+        .prototype-section {
+            margin-bottom: 40px;
+        }
+
+        .prototype-content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .prototype-image {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .persona-container {
+                flex-direction: column;
+            }
+
+            .persona-card {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="project-header">
+        <h1>Project Title</h1>
+    </div>
+
+    <!-- Project Image -->
+    <img src="/api/placeholder/1200/500" alt="Project Overview Image" class="project-image">
+
+    <!-- Project Overview -->
+    <section class="section">
+        <h2 class="section-title">Project Overview</h2>
+        <p>Provide a comprehensive overview of your project here. Discuss the problem statement, objectives, and the
+            solution you developed.</p>
+    </section>
+
+    <!-- Roles and Responsibilities -->
+    <section class="section">
+        <h2 class="section-title">Roles and Responsibilities</h2>
+        <ul class="role-list">
+            <li>Led user research and conducted user interviews</li>
+            <li>Created wireframes and prototypes</li>
+            <li>Developed user personas and journey maps</li>
+            <li>Conducted usability testing</li>
+            <li>Collaborated with development team for implementation</li>
+        </ul>
+    </section>
+
+    <!-- Pain Points -->
+    <section class="section">
+        <h2 class="section-title">Pain Points</h2>
+        <div class="persona-card">
+            <h3>Pain Point 1</h3>
+            <p>Description of the first major pain point identified during research.</p>
+        </div>
+        <div class="persona-card" style="margin-top: 20px;">
+            <h3>Pain Point 2</h3>
+            <p>Description of the second major pain point identified during research.</p>
+        </div>
+    </section>
+
+    <!-- Personas -->
+    <section class="section">
+        <h2 class="section-title">User Personas</h2>
+        <div class="persona-container">
+            <!-- Persona 1 -->
+            <div class="persona-card">
+                <img src="/api/placeholder/200/200" alt="Persona 1" class="persona-image">
+                <h3>Primary Persona</h3>
+                <p><strong>Age:</strong> XX</p>
+                <p><strong>Occupation:</strong> XXX</p>
+                <p><strong>Goals:</strong> List the main goals</p>
+                <p><strong>Frustrations:</strong> List main frustrations</p>
+                <p><strong>Bio:</strong> Brief description of the persona</p>
+            </div>
+
+            <!-- Persona 2 -->
+            <div class="persona-card">
+                <img src="/api/placeholder/200/200" alt="Persona 2" class="persona-image">
+                <h3>Secondary Persona</h3>
+                <p><strong>Age:</strong> YY</p>
+                <p><strong>Occupation:</strong> YYY</p>
+                <p><strong>Goals:</strong> List the main goals</p>
+                <p><strong>Frustrations:</strong> List main frustrations</p>
+                <p><strong>Bio:</strong> Brief description of the persona</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Journey Map -->
+    <section class="section">
+        <h2 class="section-title">User Journey Map</h2>
+        <img src="/api/placeholder/1200/400" alt="User Journey Map" class="project-image">
+    </section>
+
+    <!-- Low-fidelity Prototype -->
+    <section class="section prototype-section">
+        <h2 class="section-title">Low-fidelity Prototype</h2>
+        <div class="prototype-content">
+            <img src="/api/placeholder/1200/500" alt="Low-fidelity Prototype" class="prototype-image">
+            <h3>Key Features Tested:</h3>
+            <ul class="role-list">
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+            </ul>
+            <p style="margin-top: 20px;">Description of the low-fidelity prototype testing process and key insights
+                gained.</p>
+        </div>
+    </section>
+
+    <!-- High-fidelity Prototype -->
+    <section class="section prototype-section">
+        <h2 class="section-title">High-fidelity Prototype</h2>
+        <div class="prototype-content">
+            <img src="/api/placeholder/1200/500" alt="High-fidelity Prototype" class="prototype-image">
+            <h3>Improvements Made:</h3>
+            <ul class="role-list">
+                <li>Improvement 1</li>
+                <li>Improvement 2</li>
+                <li>Improvement 3</li>
+            </ul>
+            <p style="margin-top: 20px;">Description of the high-fidelity prototype and how it addresses user feedback
+                from earlier testing.</p>
+        </div>
+    </section>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="utf-8">
     <title>Sonam Portfolio</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -396,111 +626,6 @@
     </div>
     <!-- Portfolio End -->
 
-    <!-- kaylen -->
-    <div class="container-fluid py-5" id="kaylen">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Kaylen</h1>
-            </div>
-            <!-- Project Image -->
-            <img src="img/kaylem1.png" alt="Project Overview Image" class="project-image">
-
-            <!-- Project Overview -->
-            <section class="section">
-                <h2 class="section-title">Project Overview</h2>
-                <p>A delivery agent transports goods from one location to another, a role evolving from ancient
-                    horse-drawn transport to
-                    modern logistics. Today, delivery agents include shipping employees, couriers, and freelancers on
-                    platforms like Uber
-                    Eats. E-commerce growth, driven by companies like Amazon and Walmart, has heightened demand for
-                    delivery services. In
-                    Bhutan, technology adoption and government support for entrepreneurship are fueling demand for
-                    efficient delivery
-                    solutions in the growing e-commerce sector.</p>
-            </section>
-
-            <!-- Roles and Responsibilities -->
-            <section class="section">
-                <h2 class="section-title">Roles and Responsibilities</h2>
-                <ul class="role-list">
-                    <li>Led user research and conducted user interviews</li>
-                    <li>Created wireframes and prototypes</li>
-                    <li>Developed user personas and journey maps</li>
-                    <li>Conducted usability testing</li>
-                    <li>Collaborated with development team for implementation</li>
-                </ul>
-            </section>
-
-            <!-- Pain Points -->
-            <section class="section">
-                <h2 class="section-title">Pain Points</h2>
-                <div class="persona-card">
-                    <h3>Pain Point 1</h3>
-                    <p>Time Management and Traffic: Navigating traffic and meeting tight delivery schedules, especially
-                        in areas with poor
-                        infrastructure, causes delays and impacts delivery efficiency.</p>
-                </div>
-                <div class="persona-card" style="margin-top: 20px;">
-                    <h3>Pain Point 2</h3>
-                    <p>Payment and Job Insecurity: Inconsistent income and limited job security, especially for
-                        freelance delivery agents,
-                        create financial instability.</p>
-                </div>
-            </section>
-
-            <!-- Personas -->
-            <section class="section">
-                <h2 class="section-title">User Personas</h2>
-                <div class="persona-container">
-                    <!-- Persona 1 -->
-                    <div class="persona-card">
-                        <img src="img/profile1.jpg" alt="Persona 1" class="persona-image">
-                        <h3>Primary Persona</h3>
-                        <p><strong>Age:</strong> XX</p>
-                        <p><strong>Occupation:</strong> XXX</p>
-                        <p><strong>Goals:</strong> Secure steady earnings, efficient route planning, and timely
-                            deliveries.</p>
-                        <p><strong>Frustrations:</strong> Income inconsistency, traffic delays, and managing high
-                            delivery demands.</p>
-                    </div>
-
-                    <!-- Persona 2 -->
-                    <div class="persona-card">
-                        <img src="img/profile2.jpg" alt="Persona 2" class="persona-image">
-                        <h3>Secondary Persona</h3>
-                        <p><strong>Age:</strong> YY</p>
-                        <p><strong>Occupation:</strong> YYY</p>
-                        <p><strong>Goals:</strong>Access to timely, reliable delivery options to ensure customer
-                            satisfaction and business growth.</p>
-                        <p><strong>Frustrations:</strong> Lack of reliable delivery services, delays in reaching remote
-                            customers.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- User Journey Map -->
-            <section class="section">
-                <h2 class="section-title">User Journey Map</h2>
-                <img src="img/userjourneymap.png" alt="User Journey Map" class="project-image">
-            </section>
-
-            <!-- Low-fidelity Prototype -->
-            <section class="section prototype-section">
-                <h2 class="section-title">Low-fidelity Prototype</h2>
-                <div class="prototype-content">
-                    <img src="img/kaylenwire.png" alt="Low-fidelity Prototype" class="prototype-image">
-                </div>
-            </section>
-            <!-- High-fidelity Prototype -->
-            <section class="section prototype-section">
-                <h2 class="section-title">High-fidelity Prototype</h2>
-                <div class="prototype-content">
-                    <img src="img/kaylenpro.png" alt="High-fidelity Prototype" class="prototype-image">
-                </div>
-            </section>
-        </div>
-    </div>
     <!-- drukair -->
     <div class="container-fluid py-5" id="heli">
         <div class="container">
@@ -508,20 +633,19 @@
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
                 <h1 class="position-absolute text-uppercase text-primary">DrukAir Heli Reservation System</h1>
             </div>
+            <div class="project-header">
+                <h1>Project Title</h1>
+            </div>
+
             <!-- Project Image -->
             <img src="img/heli.jpeg" alt="Project Overview Image" class="project-image">
 
             <!-- Project Overview -->
             <section class="section">
                 <h2 class="section-title">Project Overview</h2>
-                <p>The Helicopter Management System (HMS) project for Druk Airlines aims to modernize and digitize
-                    the helicopter
-                    reservation process, shifting from manual to automated systems. Currently, reservations are
-                    handled through phone calls,
-                    with details logged into Excel—a process that is time-consuming, prone to human error, and
-                    limited in its ability to
-                    scale. HMS is designed to address these challenges by creating an efficient, centralized digital
-                    system.</p>
+                <p>Provide a comprehensive overview of your project here. Discuss the problem statement, objectives, and
+                    the
+                    solution you developed.</p>
             </section>
 
             <!-- Roles and Responsibilities -->
@@ -541,13 +665,11 @@
                 <h2 class="section-title">Pain Points</h2>
                 <div class="persona-card">
                     <h3>Pain Point 1</h3>
-                    <p>Inefficiency and Errors: Manual booking through calls and Excel causes delays and frequent
-                        errors..</p>
+                    <p>Description of the first major pain point identified during research.</p>
                 </div>
                 <div class="persona-card" style="margin-top: 20px;">
                     <h3>Pain Point 2</h3>
-                    <p>Poor Scalability: The Excel system struggles with high booking volumes, limiting data management
-                        and growth.</p>
+                    <p>Description of the second major pain point identified during research.</p>
                 </div>
             </section>
 
@@ -557,27 +679,24 @@
                 <div class="persona-container">
                     <!-- Persona 1 -->
                     <div class="persona-card">
-                        <img src="img/profile1.jpg" alt="Persona 1" class="persona-image">
+                        <img src="/api/placeholder/200/200" alt="Persona 1" class="persona-image">
                         <h3>Primary Persona</h3>
                         <p><strong>Age:</strong> XX</p>
                         <p><strong>Occupation:</strong> XXX</p>
-                        <p><strong>Goals:</strong> Easily make and manage bookings, view availability instantly, reduce
-                            errors.</p>
-                        <p><strong>Frustrations:</strong> Frequent booking errors and delays when managing multiple
-                            reservations, lack of real-time availability updates.</p>
+                        <p><strong>Goals:</strong> List the main goals</p>
+                        <p><strong>Frustrations:</strong> List main frustrations</p>
+                        <p><strong>Bio:</strong> Brief description of the persona</p>
                     </div>
 
                     <!-- Persona 2 -->
                     <div class="persona-card">
-                        <img src="img/profile2.jpg" alt="Persona 2" class="persona-image">
+                        <img src="/api/placeholder/200/200" alt="Persona 2" class="persona-image">
                         <h3>Secondary Persona</h3>
                         <p><strong>Age:</strong> YY</p>
                         <p><strong>Occupation:</strong> YYY</p>
-                        <p><strong>Goals:</strong>Streamline the booking process, centralize data, and improve response
-                            time for customer inquiries.</p>
-                        <p><strong>Frustrations:</strong> Time-consuming data entry, tracking reservations across
-                            multiple spreadsheets, difficulty in handling customer queries
-                            efficiently.</p>
+                        <p><strong>Goals:</strong> List the main goals</p>
+                        <p><strong>Frustrations:</strong> List main frustrations</p>
+                        <p><strong>Bio:</strong> Brief description of the persona</p>
                     </div>
                 </div>
             </section>
@@ -585,136 +704,214 @@
             <!-- User Journey Map -->
             <section class="section">
                 <h2 class="section-title">User Journey Map</h2>
-                <img src="img/userjourneymap.png" alt="User Journey Map" class="project-image">
+                <img src="/api/placeholder/1200/400" alt="User Journey Map" class="project-image">
             </section>
 
             <!-- Low-fidelity Prototype -->
             <section class="section prototype-section">
                 <h2 class="section-title">Low-fidelity Prototype</h2>
                 <div class="prototype-content">
-                    <img src="img/drikprowir.png" alt="Low-fidelity Prototype" class="prototype-image">
+                    <img src="/api/placeholder/1200/500" alt="Low-fidelity Prototype" class="prototype-image">
+                    <h3>Key Features Tested:</h3>
+                    <ul class="role-list">
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                    </ul>
+                    <p style="margin-top: 20px;">Description of the low-fidelity prototype testing process and key
+                        insights
+                        gained.</p>
                 </div>
             </section>
+
             <!-- High-fidelity Prototype -->
             <section class="section prototype-section">
                 <h2 class="section-title">High-fidelity Prototype</h2>
                 <div class="prototype-content">
-                    <img src="img/drukapro.png" alt="High-fidelity Prototype" class="prototype-image">
-                    <img src="img/drukupro.png" alt="High-fidelity Prototype" class="prototype-image">
+                    <img src="img/kaylem1.png" alt="High-fidelity Prototype" class="prototype-image">
+                    <h3>Improvements Made:</h3>
+                    <ul class="role-list">
+                        <li>Improvement 1</li>
+                        <li>Improvement 2</li>
+                        <li>Improvement 3</li>
+                    </ul>
+                    <p style="margin-top: 20px;">Description of the high-fidelity prototype and how it addresses user
+                        feedback
+                        from earlier testing.</p>
                 </div>
             </section>
+
+            <!-- Portfolio End -->
+
+            <!-- drukair -->
+            <div class="container-fluid py-5" id="kaylen">
+                <div class="container">
+                    <div class="position-relative d-flex align-items-center justify-content-center">
+                        <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About
+                        </h1>
+                        <h1 class="position-absolute text-uppercase text-primary">Kaylen</h1>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 pb-4 pb-lg-0">
+                            <img class="img-fluid rounded w-100" src="img/kaylem1.png" alt="">
+                        </div>
+                        <div class="col-lg-7">
+                            <h3 class="mb-4"> Project Background</h3>
+                            <p>A delivery agent transports goods from one location to another, a role evolving from
+                                ancient
+                                horse-drawn transport to
+                                modern logistics. Today, delivery agents include shipping employees, couriers, and
+                                freelancers
+                                on platforms like Uber
+                                Eats. E-commerce growth, driven by companies like Amazon and Walmart, has heightened
+                                demand for
+                                delivery services. In
+                                Bhutan, technology adoption and government support for entrepreneurship are fueling
+                                demand for
+                                efficient delivery
+                                solutions in the growing e-commerce sector.</p>
+                            <div class="row mb-3">
+                                <div class="col-sm-6 py-2">
+
+                                    <h3 class="mb-4"> Problem Statement</h3>
+                                    <p>People who stay far away from each other face the problem like they are not able
+                                        to send
+                                        or get their important things
+                                        within a short period of time. Delivering items via post or any other way takes
+                                        too much
+                                        time and wastes the person's
+                                        time.</p>
+
+                                </div>
+                                <div class="col-sm-6 py-2">
+                                    <h3 class="mb-4"> The Goal</h3>
+                                    <p>To build an application that will enable the citizens of Bhutan to deliver or
+                                        receive
+                                        parcels/things within a short
+                                        period of time.
+                                    </p>
+                                </div>
+                                <div class="col-sm-6 py-2">
+                                    <h3 class="mb-4"> My role for this project</h3>
+                                    <p>Frontend Developer</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div><br>
+
+                    <h3 class="mb-4"> Wireframe</h3><br>
+
+                    <div>
+                        <img class="img-fluid rounded w-100" src="img/kaylenwire.png" alt="">
+                    </div>
+                    <br>
+                    <h3 class="mb-4"> High-fidelity Prototype</h3><br>
+
+                    <div>
+                        <img class="img-fluid rounded w-100" src="img/kaylenpro.png" alt="">
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
         </div>
     </div>
+    </div>
+    </div>
 
+    <!-- Portfolio End -->
 
-
-    <!-- botanical -->
+    <!-- drukair -->
     <div class="container-fluid py-5" id="bota">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Botanical Bliss</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Batanical Bliss</h1>
             </div>
-            <!-- Project Image -->
-            <img src="img/botanical.png" alt="Project Overview Image" class="project-image">
-
-            <!-- Project Overview -->
-            <section class="section">
-                <h2 class="section-title">Project Overview</h2>
-                <p>Botanical Bliss is a flower-selling initiative focused on providing fresh, beautiful floral
-                    arrangements and individual
-                    flowers to customers. The project is inspired by the growing demand for high-quality flowers for
-                    various occasions,
-                    including weddings, birthdays, corporate events, and personal gifts. The floral industry continues
-                    to thrive as
-                    consumers seek out unique and meaningful ways to express emotions and celebrate milestones.
-                    Botanical Bliss aims to
-                    capture this market by offering a range of flowers with an emphasis on quality, freshness, and
-                    customer satisfaction.</p>
-            </section>
-
-            <!-- Roles and Responsibilities -->
-            <section class="section">
-                <h2 class="section-title">Roles and Responsibilities</h2>
-                <ul class="role-list">
-                    <li>Led user research and conducted user interviews</li>
-                    <li>Created wireframes and prototypes</li>
-                    <li>Developed user personas and journey maps</li>
-                    <li>Conducted usability testing</li>
-                    <li>Collaborated with development team for implementation</li>
-                </ul>
-            </section>
-
-            <!-- Pain Points -->
-            <section class="section">
-                <h2 class="section-title">Pain Points</h2>
-                <div class="persona-card">
-                    <h3>Pain Point 1</h3>
-                    <p>Inconsistent Flower Freshness: Ensuring that flowers remain fresh from storage to delivery can be
-                        challenging, impacting
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="img/botanical-blis.png" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4"> Project Background</h3>
+                    <p>Botanical Bliss is a flower-selling initiative focused on providing fresh, beautiful floral
+                        arrangements and individual
+                        flowers to customers. The project is inspired by the growing demand for high-quality flowers for
+                        various occasions,
+                        including weddings, birthdays, corporate events, and personal gifts. The floral industry
+                        continues to thrive as
+                        consumers seek out unique and meaningful ways to express emotions and celebrate milestones.
+                        Botanical Bliss aims to
+                        capture this market by offering a range of flowers with an emphasis on quality, freshness, and
                         customer satisfaction.</p>
-                </div>
-                <div class="persona-card" style="margin-top: 20px;">
-                    <h3>Pain Point 2</h3>
-                    <p>Logistics and Delivery Delays: Limited resources for timely delivery may affect the quality of
-                        arrangements upon arrival
-                        and customer experience.</p>
-                </div>
-            </section>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2">
 
-            <!-- Personas -->
-            <section class="section">
-                <h2 class="section-title">User Personas</h2>
-                <div class="persona-container">
-                    <!-- Persona 1 -->
-                    <div class="persona-card">
-                        <img src="img/profile1.jpg" alt="Persona 1" class="persona-image">
-                        <h3>Primary Persona</h3>
-                        <p><strong>Age:</strong> XX</p>
-                        <p><strong>Occupation:</strong> XXX</p>
-                        <p><strong>Goals:</strong> Seeks reliable, fresh floral arrangements for corporate and private
-                            events. Values timely delivery and quality.</p>
-                        <p><strong>Frustrations:</strong>Needs consistent quality and on-time service to meet high
-                            client expectations.</p>
+                            <h3 class="mb-4"> Problem Statement</h3>
+                            <p>The flower industry faces challenges in maintaining the freshness and quality of flowers
+                                throughout the supply chain,
+                                from sourcing to final sale. Customers frequently encounter issues like limited variety,
+                                short flower shelf-life, and
+                                inconsistency in quality. Additionally, there is a need for convenient and reliable
+                                access to flowers, as consumers are
+                                increasingly looking for flexible purchasing options. Botanical Bliss seeks to address
+                                these issues by establishing a
+                                system that ensures freshness, consistency, and availability, thereby enhancing the
+                                customer experience and reducing
+                                waste.</p>
+
+                        </div>
+                        <div class="col-sm-6 py-2">
+                            <h3 class="mb-4"> The Goal</h3>
+                            <p>The goal of Botanical Bliss is to provide high-quality, fresh flowers with convenient
+                                access and exceptional customer
+                                service, meeting diverse customer needs while promoting sustainable practices.
+                            </p>
+                        </div>
+                        <div class="col-sm-6 py-2">
+                            <h3 class="mb-4"> My role for this project</h3>
+                            <p>Frontend as well as backend Developer</p>
+                        </div>
+
                     </div>
 
-                    <!-- Persona 2 -->
-                    <div class="persona-card">
-                        <img src="img/profile2.jpg" alt="Persona 2" class="persona-image">
-                        <h3>Secondary Persona</h3>
-                        <p><strong>Age:</strong> YY</p>
-                        <p><strong>Occupation:</strong> YYY</p>
-                        <p><strong>Goals:</strong>Buys flowers for personal gifts and celebrations, values meaningful
-                            and unique arrangements.</p>
-                        <p><strong>Frustrations:</strong>Wants convenient ordering and a variety of fresh flower options
-                            with flexible delivery timing.</p>
-                    </div>
                 </div>
-            </section>
 
-            <!-- User Journey Map -->
-            <section class="section">
-                <h2 class="section-title">User Journey Map</h2>
-                <img src="img/userjourneymap.png" alt="User Journey Map" class="project-image">
-            </section>
 
-            <!-- Low-fidelity Prototype -->
-            <section class="section prototype-section">
-                <h2 class="section-title">Low-fidelity Prototype</h2>
-                <div class="prototype-content">
-                    <img src="img/drikprowir.png" alt="Low-fidelity Prototype" class="prototype-image">
-                </div>
-            </section>
-            <!-- High-fidelity Prototype -->
-            <section class="section prototype-section">
-                <h2 class="section-title">High-fidelity Prototype</h2>
-                <div class="prototype-content">
-                    <img src="img/drukapro.png" alt="High-fidelity Prototype" class="prototype-image">
-                    <img src="img/drukupro.png" alt="High-fidelity Prototype" class="prototype-image">
-                </div>
-            </section>
+            </div><br>
+            <h3 class="mb-4"> Wireframe</h3><br>
+
+            <div>
+                <img class="img-fluid rounded w-100" src="img/botawire.png" alt="">
+            </div><br>
+
+            <div>
+                <img class="img-fluid rounded w-100" src="img/botuwire.png" alt="">
+            </div><br>
+
+            <h3 class="mb-4"> High-fidelity Prototype</h3><br>
+
+            <div>
+                <img class="img-fluid rounded w-100" src="img/botaupro.png" alt="">
+            </div><br>
+
+            <div>
+                <img class="img-fluid rounded w-100" src="img/botapro.png" alt="">
+            </div>
 
         </div>
+
+
+    </div>
+
+    </div>
+    </div>
+    </div>
     </div>
 
 
